@@ -1,3 +1,5 @@
+<img src="https://miro.medium.com/max/1838/1*4IWsNF0FGF9zhMuipgN5Tw.jpeg">
+
 <h1 align="center">Exercícios de lógica (Swift)</h1>
 
 1. Dado um número inteiro positivo n, calcular a soma dos n primeiros números inteiros positivos.
