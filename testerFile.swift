@@ -1,20 +1,41 @@
-// 2. Uma loja de discos anota diariamente durante o mês de março a quantidade de discos vendidos. 
-// Determinar em que dia desse mês ocorreu a maior venda e qual foi a quantidade de discos vendida nesse dia.
+// 3. Dado um número natural na base binária, transformá-lo para a base decimal.
+// Exemplo: Dado 10010 a saída será 18, pois 1. 2^4 + 0. 2^3 + 0. 2^2 + 1. 2^1 + 0. 2^0 = 18.
 
-let marchList = [10, 20, 1, 4, 43, 50, 24, 65, 7, 8, 19]
+//Entrada:
+let binaryNumber = 10010;
 
-func checkBetterDay(_ items:[Int]) {
-    var highestQuantity = 0;
-    var day = 0;
-    for (index, value) in items.enumerated() {        
-        if value > highestQuantity {
-            highestQuantity = value;
-            day = index + 1;
-        }
-    }    
-    print("Melhor dia: \(day)º dia, Quantidade de discos vendidos: \(highestQuantity) discos");
+// Função para elevar a base com int:
+func handleExpoOfANumber (_ num: Int, _ power: Int) -> Int{
+    return Int(pow(Double(num),Double(power)))
 }
 
-checkBetterDay(marchList);
+// Função para transformar número em array:
+func convertNumberIntoArray(_ number:Int) {
+    let digits = String(number).compactMap { Int(String($0)) }
+    print("dentro da função convertNumberIntoArray: \(digits)") 
+}
+
+// Função para transofrmar binário em decimal:
+func handleBinaryToDecimal(_ number: Int) {
+    // Passo 1 (Transformar em array):
+    let arrayOfNumbers = convertNumberIntoArray(number);
+    print("dentro da função binaryToDecimal: \(arrayOfNumbers)")
+
+    // Passo 2 (Fazer o cálculo de cada número do array):
+    var expoResult = 0;
+    var totalSum = 0;
+    for (index, value) in arrayOfNumbers.enumerated() {
+        expoResult = value * handleExpoOfANumber(2, index);
+        print("o total do expoente em \(index) é \(expoResult)")
+        totalSum = totalSum + expoResult;
+    }
+
+    // Passo 3 (Fazer a soma dos valores e imprimir): 
+    print("resultado em binário: \(totalSum)");
+    
+}
+
+handleBinaryToDecimal(binaryNumber);
+
 
 
