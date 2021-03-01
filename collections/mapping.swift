@@ -18,13 +18,28 @@ for person in peopleArray {
     name.append(person.name)
 }
 print(name)
+// ["Santosh", "John", "Amit"]
+
+// MAPPING: Returns the exact type that corresponds to the mapping transformation.
 
 //Extracting people names using map (Example 01);
 let names = peopleArray.map({(person) -> String in 
   return person.name
 })
 print(names)
+// ["Santosh", "John", "Amit"]
 
 //Extracting people names using map (Example 02);
-let names = peopleArray.map({ $0.name})
+let names = peopleArray.map({ $0.name })
 print(names)
+// ["Santosh", "John", "Amit"]
+
+let cars = peopleArray.map({ 0.cars })
+print(cars)
+// [["i20", "Swift VXI"], ["Crita", "Swift VXI"], []]
+
+// FLATMAPPING: Returns single set of elements and will remove the unnecessary/not useful ‘nil’.
+
+let flatCars = peopleArray.flatmap({ $0.cars })
+print(flatCars)
+// ["i20", "Swift VXI", "Crita", "Swift VXI"]
