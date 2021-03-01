@@ -12,19 +12,3 @@ let peopleArray = [
   Person(name:"Amit", address:"Nagpure, India", age:17, income: 200000.0, cars:Array())
 ]
 
-//Extracting people names without using map method;
-var name: [String] = Array()
-for person in peopleArray {
-    name.append(person.name)
-}
-print(name)
-
-//Extracting people names using map (Example 01);
-let names = peopleArray.map({(person) -> String in 
-  return person.name
-})
-print(names)
-
-//Extracting people names using map (Example 02);
-let names = peopleArray.map({ $0.name})
-print(names)
