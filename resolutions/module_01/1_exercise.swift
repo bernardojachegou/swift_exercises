@@ -26,10 +26,15 @@ print(resultWithArray);
 // Resolução 03 (Reduce):
 func sumWithReduce(_ numbers:[Int]) -> Int {
     var finalResult: Int = 0; 
+
     let totalSum = numbers.reduce(0) {(result, next) -> Int in
         return result + next;
     }
-    finalResult = totalSum - numbers.endIndex;
+
+    if let lastNumber = numbers.last {
+    finalResult = totalSum - lastNumber;
+    }
+    
     return finalResult;
 }
 let resultWithReduce = sumWithReduce(drawnNumbers);
