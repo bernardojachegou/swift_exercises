@@ -38,3 +38,8 @@ let numbers = [23.23478, -2.32784, 34.328, 33.28347]
 let conciseSum = numbers.reduce(0, +)
 print("conciseSum: \(conciseSum)")
 
+let sum = numbers.reduce(0) {(result, next) -> Double in
+    return result + next
+}
+print("Total: \(sum)")
+
