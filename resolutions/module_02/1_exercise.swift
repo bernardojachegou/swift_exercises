@@ -3,8 +3,8 @@
 let drawnNumbers: [Int] = [5, 2, 3, 4, 5, 6, 7, 8, 9, 5];
 let undrawnNumbers: [Int] = [1, 2, 3, 4, 6];
 
-// Solução 01:
-func checkNumberFive(_ numbers:[Int]) {
+// Solution 01:
+func checkNumberFive(elements numbers:[Int]) {
     let firstNumber = numbers.first;
     let lastNumber = numbers.last;
 
@@ -14,11 +14,11 @@ func checkNumberFive(_ numbers:[Int]) {
       print ("5 is not there!")
     }
 }
-checkNumberFive(drawnNumbers);
-checkNumberFive(undrawnNumbers);
+checkNumberFive(elements: drawnNumbers);
+checkNumberFive(elements: undrawnNumbers);
 
-// Solução 02:
-func checkNumberFiveTrue(_ numbers:[Int]) -> Bool {
+// Solution 02:
+func checkNumberFiveBool(elements numbers:[Int]) -> Bool {
     let firstElement = numbers.first;
     let lastElement = numbers.last;
 
@@ -28,5 +28,12 @@ func checkNumberFiveTrue(_ numbers:[Int]) -> Bool {
       return false
     }
 }
-print(checkNumberFiveTrue(drawnNumbers));
-print(checkNumberFiveTrue(undrawnNumbers));
+print(checkNumberFiveBool(elements: drawnNumbers));
+print(checkNumberFiveBool(elements: undrawnNumbers));
+
+// Solution 03:
+func checkNumberFiveConcise(elements numbers:[Int]) -> Bool {
+  numbers.first != numbers.last ? false : true;
+}
+print(checkNumberFiveConcise(elements: drawnNumbers));
+print(checkNumberFiveConcise(elements: undrawnNumbers));
