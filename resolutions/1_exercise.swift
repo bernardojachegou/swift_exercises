@@ -1,5 +1,5 @@
 // 1. Dado um número inteiro positivo n, calcular a soma dos n primeiros números inteiros positivos. 
-// Resolução 01 (Sem array):
+// Resolução 01 (Int):
 func sum(_ number:Int) -> Int {
     var sum = 0;
     for i in 0..<number {
@@ -10,7 +10,7 @@ func sum(_ number:Int) -> Int {
 let result = sum(10);
 print(result);
 
-// Resolução 02 (Com array):
+// Resolução 02 (For-in):
 let drawnNumbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 func sumWithArray(_ numbers:[Int], _ x:Int) -> Int {
@@ -23,7 +23,7 @@ func sumWithArray(_ numbers:[Int], _ x:Int) -> Int {
 let resultWithArray = sumWithArray(drawnNumbers, 4);
 print(resultWithArray);
 
-// Resolução 03 (Com reduce):
+// Resolução 03 (Reduce):
 func sumWithReduce(_ numbers:[Int]) -> Int {
     var finalResult: Int = 0; 
     let totalSum = numbers.reduce(0) {(result, next) -> Int in
@@ -34,4 +34,6 @@ func sumWithReduce(_ numbers:[Int]) -> Int {
 }
 let resultWithReduce = sumWithReduce(drawnNumbers);
 print(resultWithReduce);
+
+// Como eu faria essa função com o contador de indices?
 

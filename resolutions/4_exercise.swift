@@ -7,12 +7,12 @@ func numberChecker(_ drawnNumber:Int, _ checkedNumber: Int) {
     let numbers = String(drawnNumber).compactMap { Int(String($0)) };
     var numberKeeper: [Int] = [];
 
-    for number in numbers {
-        if number == checkedNumber {
-            numberKeeper.append(number)
+    numbers.map({
+        if $0 == checkedNumber {
+            numberKeeper.append($0)
         }
-    }
+    })
     print("o número \(checkedNumber) aparece \(numberKeeper.count) vezes")
 }
 
-numberChecker(x, y)
+numberChecker(x, y);

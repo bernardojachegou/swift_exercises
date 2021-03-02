@@ -3,7 +3,7 @@
 
 let listedNumbers = [1.5, 2.7, 3.0, 8, 9, 1.5, 2.7]
 
-let counts = listedNumbers.reduce(into: [:]) { counts, word in counts[word, default: 0] += 1 }
+let counts = listedNumbers.reduce(into: [:]) { counts, occurence in counts[occurence, default: 0] += 1 }
 
 for (key, value) in counts {
     print("Na sequência: \(key) ocorre \(value)x")
