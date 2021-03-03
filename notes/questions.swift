@@ -42,3 +42,4 @@ checkBetterDay(marchList);
 // É viavel um map aqui?
 // -------------------------------------------------------------------------------
 // Check exercises 01 and 02 in module 02!
+// Function with or without return?
