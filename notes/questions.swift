@@ -55,6 +55,8 @@ print(copyTheHighestValueMapping(undrawnNumbers));
 // Check exercise 01;
 // Check exercise 02;
 // Check exercise 03;
+// Check exercise 09;
 
 // Questions?
 // Function with or without return?
+
