@@ -8,5 +8,3 @@ func reverseNumbers(elements numbers:[Int]) -> Array<Int> {
   return reversedArray;
 }
 print( reverseNumbers(elements: drawnNumbers));
-// To return array with can use -> Array<type>;
-// or -> just [type];
