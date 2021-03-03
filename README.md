@@ -23,3 +23,7 @@
 1. Write a Swift program to check if 5 appears as either the first or last element in a given array of integers. The array length should be 1 or more.
 
 2. Write a Swift program to check whether the first element and the last element of a given array of integers are equal. The array length must be 1 or more.
+
+3. Write a Swift program to test if two given arrays of integers have the same first and last element. Both arrays length must be 1 or more.
+
+4. Write a Swift program to compute the sum of all the elements of a given array of integers and length 4.
