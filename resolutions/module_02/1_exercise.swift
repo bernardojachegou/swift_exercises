@@ -32,8 +32,8 @@ print(checkNumberFiveBool(elements: drawnNumbers));
 print(checkNumberFiveBool(elements: undrawnNumbers));
 
 // Solution 03:
-func checkNumberFiveConcise(elements numbers:[Int]) -> Bool {
+func checkNumberFiveConcise(_ numbers:[Int]) -> Bool {
   numbers.first != numbers.last ? false : true;
 }
-print(checkNumberFiveConcise(elements: drawnNumbers));
-print(checkNumberFiveConcise(elements: undrawnNumbers));
+print(checkNumberFiveConcise(drawnNumbers));
+print(checkNumberFiveConcise(undrawnNumbers));

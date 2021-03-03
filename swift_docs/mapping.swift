@@ -34,7 +34,7 @@ let names = peopleArray.map({ $0.name })
 print(names)
 // ["Santosh", "John", "Amit"]
 
-let cars = peopleArray.map({ 0.cars })
+let cars = peopleArray.map({ $0.cars })
 print(cars)
 // [["i20", "Swift VXI"], ["Crita", "Swift VXI"], []]
 

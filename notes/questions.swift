@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------------
-// Questão 01
+// Questão 01 - Módulo 01:
 let drawnNumbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 func sumWithReduce(_ numbers:[Int]) -> Int {
     var finalResult: Int = 0; 
@@ -14,7 +14,7 @@ print(resultWithReduce);
 // Como eu faria essa função com o contador de índices?
 // Adicionar os índices com enumerated()?
 // -------------------------------------------------------------------------------
-// Questão 2
+// Questão 2 - Módulo 01:
 let marchList = [10, 20, 1, 4, 43, 50, 24, 65, 7, 8, 19]
 func checkBetterDay(_ items:[Int]) {
     var highestQuantity = 0;
@@ -30,8 +30,9 @@ func checkBetterDay(_ items:[Int]) {
 checkBetterDay(marchList);
 // Criar os índices com map e depois fazer um reduce ou filter?
 // Usar map + reduce?
+// Qual o retorno dessa função?
 // -------------------------------------------------------------------------------
-//Questão 03
+//Questão 03 - - Módulo 01:
     for digit in binaryArray {
         switch(digit) {
             case "0": result = result * 2
@@ -41,5 +42,19 @@ checkBetterDay(marchList);
     }
 // É viavel um map aqui?
 // -------------------------------------------------------------------------------
-// Check exercises 01 and 02 in module 02!
+//Questão 07 - - Módulo 02:
+func copyTheHighestValueMapping(_ numbers:[Int]) -> [Int] {
+  var maxValue = numbers.max();
+  let newArrayMapped = numbers.map({//Adding the maxValue})
+  return newArrayMapped
+}
+print(copyTheHighestValueMapping(drawnNumbers));
+print(copyTheHighestValueMapping(undrawnNumbers));
+// Da pra resolver com mapping?
+// -------------------------------------------------------------------------------
+// Check exercise 01;
+// Check exercise 02;
+// Check exercise 03;
+
+// Questions?
 // Function with or without return?
