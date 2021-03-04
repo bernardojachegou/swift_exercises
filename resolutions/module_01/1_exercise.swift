@@ -39,6 +39,3 @@ func sumWithReduce(_ numbers:[Int]) -> Int {
 }
 let resultWithReduce = sumWithReduce(drawnNumbers);
 print(resultWithReduce);
-
-// Como eu faria essa função com o contador de indices?
-

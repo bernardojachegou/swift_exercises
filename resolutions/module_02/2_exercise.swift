@@ -4,7 +4,7 @@ let drawnNumbers: [Int] = [5, 2, 3, 4, 5, 6, 7, 8, 9, 5];
 let undrawnNumbers: [Int] = [1, 2, 3, 4, 6];
 
 // Solution 01:
-func checkFirstAndLast(elements numbers:[Int]) { // return -> String
+func checkFirstAndLast(elements numbers:[Int]) {
   let firstElement = numbers.first;
   let lastElement = numbers.last;
 
