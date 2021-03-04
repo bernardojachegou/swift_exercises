@@ -14,7 +14,6 @@ func checkThreeOrFive(collection numbers:[Int]) -> Bool {
   }
   return finalResult;
 }
-
 print(checkThreeOrFive(collection: drawnNumbers));
 print(checkThreeOrFive(collection: undrawnNumbers));
 print(checkThreeOrFive(collection: sorteredNumbers));
@@ -23,7 +22,6 @@ print(checkThreeOrFive(collection: sorteredNumbers));
 func checkIfContainsThreeOrFive(_ numbers:[Int]) -> Bool {
   numbers.contains(3) || numbers.contains(5) ? true : false;
 }
-
 print(checkIfContainsThreeOrFive(drawnNumbers));
 print(checkIfContainsThreeOrFive(undrawnNumbers));
 print(checkIfContainsThreeOrFive(sorteredNumbers));
