@@ -1,5 +1,4 @@
 // 18. Write a Swift program to create an array of length four containing all their elements from two given array (each length two) of integers.
-// 18. Write a Swift program to create an array of length four containing all their elements from two given array (each length two) of integers.
 let drawnNumbers: [Int] = [1, 2];
 let undrawnNumbers: [Int] = [3, 4];
 
