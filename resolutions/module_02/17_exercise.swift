@@ -21,7 +21,6 @@ func newArrWithMiddleElements(_ x:[Int]) -> [Int] {
     }
   return containsMiddleElements;
 } 
-
 print(newArrWithMiddleElements(drawnNumbers));
 print(newArrWithMiddleElements(undrawnNumbers));
 print(newArrWithMiddleElements(sorteredNumbers));
@@ -40,7 +39,6 @@ func newArrWithMiddleElementsCalculated(_ x:[Int]) -> [Int] {
   }
   return newArr;
 }
-
 print(newArrWithMiddleElementsCalculated(drawnNumbers));
 print(newArrWithMiddleElementsCalculated(undrawnNumbers));
 print(newArrWithMiddleElementsCalculated(sorteredNumbers));
