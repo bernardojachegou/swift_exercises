@@ -18,7 +18,6 @@ func sumTwoAndReturn(_ x:[Int], _ y:[Int]) -> [Int] {
     return y;
   }
 }
-
 print(sumTwoAndReturn(drawnNumbers, undrawnNumbers)); // y
 print(sumTwoAndReturn([1, 1], [1, 1])); // x
 print(sumTwoAndReturn([2, 6], [0, 1])); // x
