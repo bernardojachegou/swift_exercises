@@ -1,0 +1,18 @@
+// 27. Write a Swift program to check if a given array of integers contains a 3 next to a 3 somewhere.
+let drawnNumbers:[Int] = [1, 3, 4, 3, 9]; // false
+let undrawnNumbers:[Int] = [11, 3, 3, 7];  // true
+let sorteredNumbers:[Int] = [1, 3, 11, 7, 3]; // false
+
+// Resolution 01:
+func checkIfTwinThrees(_ numbers:[Int]) -> Bool {
+  // Getting position loop;
+  for x in 0..<numbers.count-1 {
+    if numbers[x] == 3 && numbers[x+1] == 3 {
+      return true
+    } 
+  }
+  return false;
+}
+print(checkIfTwinThrees(drawnNumbers));
+print(checkIfTwinThrees(undrawnNumbers));
+print(checkIfTwinThrees(sorteredNumbers));
