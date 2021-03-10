@@ -24,11 +24,10 @@ print(checkNumberOfOnes(into: undrawnNumbers));
 
 // Resolution 02:
 func conciseCheckNumbersOfOnes(_ numbers:[Int]) -> Bool {
-  let ones = numbers.filter({number in return number == 1})
+  let ones = numbers.filter({$0 == 1})
   let threes = numbers.filter({$0 == 3})
 
-  let result = ones.count > threes.count ? true : false;
-  return result;
+  return ones.count > threes.count;
 }
 print(conciseCheckNumbersOfOnes(drawnNumbers));
 print(conciseCheckNumbersOfOnes(undrawnNumbers));

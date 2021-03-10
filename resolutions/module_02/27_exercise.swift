@@ -17,7 +17,7 @@ print(checkIfTwinThrees(drawnNumbers));
 print(checkIfTwinThrees(undrawnNumbers));
 print(checkIfTwinThrees(sorteredNumbers));
 
-// Resolution 01:
+// Resolution 02 (Not Solved):
 func checkIfTwinThreesWithParams(_ numbers:[Int]) -> Bool {
   // Using index and valu params;
   for (index, value) in numbers.enumerated() {
