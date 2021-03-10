@@ -31,3 +31,7 @@ let adults = peopleArray.filter({ $0.age > 18})
 let adults = peopleArray.filter({ $0.age > 18}).map({ return $0.name})
 print(adults)
 // ["Santosh", "John"]
+
+// Filter sintax example:
+let ones = numbers.filter({z in return z == 1}) // filter one inside an array called numbers;
+let threes = numbers.filter({$0 == 3}) // filter one inside an array called numbers (Shorter);
