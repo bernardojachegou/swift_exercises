@@ -5,7 +5,7 @@ let sorteredNumbers:[Int] = [1, 3, 11, 7, 3]; // false
 
 // Resolution 01:
 func checkIfTwinThrees(_ numbers:[Int]) -> Bool {
-  // Getting position loop;
+  // // Getting index position;
   for x in 0..<numbers.count-1 {
     if numbers[x] == 3 && numbers[x+1] == 3 {
       return true
@@ -16,3 +16,18 @@ func checkIfTwinThrees(_ numbers:[Int]) -> Bool {
 print(checkIfTwinThrees(drawnNumbers));
 print(checkIfTwinThrees(undrawnNumbers));
 print(checkIfTwinThrees(sorteredNumbers));
+
+// Resolution 01:
+func checkIfTwinThreesWithParams(_ numbers:[Int]) -> Bool {
+  // Using index and valu params;
+  for (index, value) in numbers.enumerated() {
+    if value == 3 && index + 1 == value {
+      return true
+    } 
+  }
+
+  return false;
+}
+print(checkIfTwinThreesWithParams(drawnNumbers));
+print(checkIfTwinThreesWithParams(undrawnNumbers));
+print(checkIfTwinThreesWithParams(sorteredNumbers));
