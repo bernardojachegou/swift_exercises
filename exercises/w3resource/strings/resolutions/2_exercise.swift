@@ -1,0 +1,1 @@
+// 2. Write a Swift program to insert a given string to another given string where the second string will be in the middle of the first string. 

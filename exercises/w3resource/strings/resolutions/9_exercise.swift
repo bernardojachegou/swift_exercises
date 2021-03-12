@@ -1,0 +1,1 @@
+// 9. Write a Swift program to create a string made of two copies of the last two characters of a given string. The given string length must be at least 2.
