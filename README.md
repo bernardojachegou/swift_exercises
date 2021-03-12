@@ -6,8 +6,8 @@
 
 <h3>Sumary</h3>
 <ul>
-<li>Basic with Swift (Monique)</li>
-<li>Array Exercises (w3resource)</li>
-<li>String Exercises (w3resource)</li>
-<li>Swift Docs Examples</li>
+<li>[Basic](https://github.com/bernardojachegou/swift_exercises/tree/main/exercises/monique with Swift) (Monique)</li>
+<li>[Array](https://github.com/bernardojachegou/swift_exercises/tree/main/exercises/w3resource/array) Exercises (w3resource)</li>
+<li>[String](https://github.com/bernardojachegou/swift_exercises/tree/main/exercises/w3resource/strings) Exercises (w3resource)</li>
+<li>[Examples](https://github.com/bernardojachegou/swift_exercises/tree/main/swift_docs) (Swift Docs)</li>
 </ul>
